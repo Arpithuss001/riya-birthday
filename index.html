@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Birthday, Riya</title>
+<meta name="description" content="A little something made just for you.">
+<meta name="theme-color" content="#fbe9e7">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💌</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=DM+Sans:wght@400;500&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="floaters" id="floaters" aria-hidden="true"></div>
+
+<main>
+  <!-- 1. Landing + envelope -->
+  <section class="hero" id="hero">
+    <h1>Happy Birthday, Riya <span class="heart" aria-hidden="true">♡</span></h1>
+    <p class="sub">A little something made just for you</p>
+
+    <button class="envelope" id="envelope" type="button" aria-expanded="false" aria-controls="letter" aria-label="Open the envelope">
+      <span class="env-back"></span>
+      <span class="env-paper" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="env-front"></span>
+      <span class="env-flap"><span class="seal" aria-hidden="true">♡</span></span>
+    </button>
+    <p class="hint" id="hint">Tap the envelope to open it</p>
+  </section>
+
+  <!-- 2. Letter -->
+  <section class="letter-wrap" id="letter" tabindex="-1" aria-label="Birthday letter" hidden>
+    <article class="letter">
+      <p>Happiest birthday Riiiiii ❤️🎀</p>
+      <p>It’s actually so funny how we went from not talking for more than a year to randomly talking again and somehow things still feel kinda the same 😭❤️ I genuinely never thought we’d get back to talking like this but I’m so glad we did. It feels really nice that even after all that time and everything that happened we can still talk and laugh like we used to. It’s like we missed out on so many conversations but somehow the vibe is still there and that honestly makes me happy 💗</p>
+      <p>I guess some bonds don’t really go away even when people stop talking for a long time. Sometimes life just takes people in different directions and things become different for a while but it’s nice when you somehow find your way back to each other. And I’m really glad we got that chance. I hope this time we make lots of new memories have endless gossip sessions share the most random things and get back to being our usual selves hehe 🫶🏻</p>
+      <p>Honestly there are so many little things about old friendships that you don’t realise you miss until you start talking again and I think that’s what makes this whole thing feel so nice. I’m looking forward to all the random conversations the silly arguments the gossip and all the moments that we’ll probably laugh about later. Hopefully we get to make up for all the time we missed and this time we don’t let another whole year go by without talking 😭❤️</p>
+      <p>On your special day I genuinely wish you all the happiness in the world. I hope this year brings you so much love success peace and all the little things that make you smile. I hope you get closer to everything you’ve been working for and that life surprises you in the best possible ways. You deserve people who genuinely care about you moments that make you feel special and so many reasons to be happy. May you always keep smiling that pretty smile and may all the good things find their way to you 🧿💗</p>
+      <p>I hope you always remember how special you are and never settle for anything less than what makes you genuinely happy. No matter how much life changes I hope you always have people around you who make you feel loved understood and appreciated. And I hope this birthday is filled with all your favourite people lots of laughter good food and memories that stay with you for a long long time 🎂❤️</p>
+      <p>Have the best birthday everrr Riiiiii!! I’m genuinely happy that we’re back in each other’s lives and I hope this is the start of a much better chapter with lots of good memories and our old bond getting even better. Here’s to more gossip more random talks more stupid jokes and hopefully never going back to being strangers again hehe 😭💗</p>
+      <p>Lots and lots of loveee and the biggest birthday hug everrr 🫂🎀❤️ Stay happy stay blessed and keep being the amazing person you are. Have the most beautiful dayyyy!! 💌✨</p>
+    </article>
+  </section>
+
+  <!-- 3. Gallery (edit captions here; photos go in /photos) -->
+  <section class="gallery" id="gallery" hidden>
+    <h2>a few little pages</h2>
+    <div class="board">
+      <button class="polaroid" type="button" style="--r:-3deg;--ar:1/1" aria-pressed="false">
+        <span class="frame"><img src="photos/photo1.jpg" alt="A little memory of us" loading="lazy"><span class="ph">add<br><b>photo1.jpg</b></span></span>
+        <span class="cap">a little memory</span>
+      </button>
+      <button class="polaroid" type="button" style="--r:2.5deg;--ar:3/4" aria-pressed="false">
+        <span class="frame"><img src="photos/photo2.jpg" alt="The good old days" loading="lazy"><span class="ph">add<br><b>photo2.jpg</b></span></span>
+        <span class="cap">the good old days</span>
+      </button>
+      <button class="polaroid" type="button" style="--r:-1.5deg;--ar:4/3" aria-pressed="false">
+        <span class="frame"><img src="photos/photo3.jpg" alt="Silly moments together" loading="lazy"><span class="ph">add<br><b>photo3.jpg</b></span></span>
+        <span class="cap">silly moments</span>
+      </button>
+      <button class="polaroid" type="button" style="--r:3deg;--ar:4/5" aria-pressed="false">
+        <span class="frame"><img src="photos/photo4.jpg" alt="A new little chapter" loading="lazy"><span class="ph">add<br><b>photo4.jpg</b></span></span>
+        <span class="cap">a new little chapter</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- 4. Closing -->
+  <section class="closing" id="closing" hidden>
+    <p>Here’s to new memories, more random conversations and hopefully not disappearing for another year again, hehe.</p>
+    <p>Happy birthday once again, Riya 💗</p>
+    <button class="heart-btn" id="heartBtn" type="button" aria-label="Send a little heart">♡</button>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
